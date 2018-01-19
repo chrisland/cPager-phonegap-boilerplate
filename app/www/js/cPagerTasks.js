@@ -5,10 +5,11 @@ var cPagerTasks = {
 
 
     link: function (e) {
-        if (!content) {
+        //console.log(e.content);
+        if (!e.content) {
             return false;
         }
-        window.open(content, '_system');
+        window.open(e.content, '_system');
         return false;
     },
 

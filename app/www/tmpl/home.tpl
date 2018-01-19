@@ -7,6 +7,11 @@
 	<h2>System</h2>
 	<button class="pageBtn h-1" data-page="grid">Example Grid</button>
 
+	<button class="pageBtn h-1" data-page="task" data-task="myCtrl.myTask">Example Task</button>
+	<button class="pageBtn h-1" data-page="task" data-task="myCtrl.myAnimateTask" data-animate="ease" data-direction="left" data-duration="1">Example Animate + Task</button>
+	<button class="pageBtn h-1" data-page="task" data-task="link" data-content="http://www.google.de">Global Task</button>
+
+
 </div>
 
 <div class="h-7 main scrollable-y">

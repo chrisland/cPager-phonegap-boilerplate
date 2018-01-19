@@ -24,8 +24,8 @@ app.initialize = function() {
         handlerOff: 'disable',
         tmpl: ['home'],
         tasks: cPagerTasks,
-        ctrlPath: './task',
-        ctrl: [],
+        ctrlPath: './ctrl',
+        ctrl: ['myCtrl','mySecondCtrl'],
         debug: app.LOG || false,
         onReady: function () {}
     });
