@@ -1,0 +1,9 @@
+{
+  "name": "com.cPager.boilerplate",
+  "version": "1.0.0",
+  "displayName": "cPager-phonegap-boilerplate",
+  "cordova": {
+  },
+  "dependencies": {
+  }
+}

@@ -1,5 +1,5 @@
 <div class="h-2 header">
-	<h1>Imprint</h1>
+	<h1>Impressum</h1>
 </div>
 
 <div class="h-13 main">

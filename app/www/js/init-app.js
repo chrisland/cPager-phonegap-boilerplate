@@ -1,36 +1,29 @@
+"use strict";
+
 window.app = window.app || {} ;         // there should only be one of these...
 
+app.initialize = function() {
 
-app.param = {
-    start: 'home'
-    //,startTask: 'home'
-}
-
-
-app.initialize = function(param) {
-
-    if (param) {
-        for (var i in param) {
-            if(param.hasOwnProperty(i)){
-              app.param[i] = param[i];
-            }
-        }
-    }
 
     app.cPager = new cPager({
         container: 'page',
         start: {
-            page: app.param.start || false,
-            task: app.param.startTask || false,
+            page: 'home',
+            task: false,
             content: false,
             param: {
                 history: true
             }
         },
+        animate: {
+            timing: false, // string; css animate easing function
+            direction: false, // string; direction
+            duration: 0.6 // integer; duration in seconds
+        },
         handler: 'pageBtn',
         handlerOff: 'disable',
         tmpl: ['home'],
-        tasks: myTask,
+        tasks: cPagerTasks,
         ctrlPath: './task',
         ctrl: [],
         debug: app.LOG || false,
