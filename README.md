@@ -5,7 +5,7 @@
     $ cd path/to/app
     $ phonegap serve
 
-### Libaries / Frameworks
+### Libraries / Frameworks
 
     - Phonegap v7.1.1
     - jQuery v3.2.1
